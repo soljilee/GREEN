@@ -1,0 +1,18 @@
+@import url('common.css');
+
+.t_board{width: 1000px; margin: 0 auto; border-collapse: collapse;}
+
+.t_board thead th{background: #555;
+                  padding: 15px 0;}
+.t_board tbody td{border-bottom:1px solid #ddd;
+                  padding: 15px 0;
+                  text-align: center;}
+
+.t_board tbody td p{width: 700px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;}
+
+.t_board tfoot td{text-align: right;}
+
+.t_board tbody tr:nth-of-type(even){background: #eee}

@@ -1,0 +1,49 @@
+@import url('common.css');
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+
+*{margin: 0; padding: 0 auto; border:0.1px solid transparent;}
+
+.wrap{width: 100%; width: 80%; margin: 0 auto;}
+
+header{display: flex; justify-content: space-between;}
+
+/*----로고------*/
+header h1{padding: 50px 95px;}
+header h1 img{}
+
+/*----헤드 네비게이션--*/
+header nav{padding: 20px;}
+header nav a{margin: 30px;font-size: 13px;position: relative;}
+
+/*----네비게이션 호버--*/
+header nav a:after{content:'';background:#33cccc; position: absolute;bottom:0;left: 50%; width: 0%;height: 1px;display: block;}
+header nav a:hover:after{width: 100%;left: 0%; transition:width .5s ease-in, left .5s;}
+header nav a:hover{color:#33cccc;}
+
+
+/*----섹션--*/
+section{background:#f6f6f6; height: 100%;}
+section div{text-align: center;padding: 50px;}
+section div h2{font-size: 30px;font-family: 'Bangers', cursive;}
+section div p{white-space: pre-line; color: #999999;margin: 15px; letter-spacing: 1px;}
+
+/*----섹션 색상--*/
+section ul{width: 100%; height: 100%}
+section ul li{background: #838383;width: 25%; height: 300px;float: left;}
+section ul li:nth-of-type(2n+1):nth-of-type(-n+4){background: #ddd;}
+section ul li:nth-of-type(2n+6):nth-of-type(-n+8){background: #ddd;}
+section ul li:nth-of-type(2n+9):nth-of-type(-n+12){background: #ddd;}
+section ul li:after{content:'';display: block; width: 100%; height: 100%; background:#33cccc url('../img/eye.png')center;opacity: 0; transition: .5s}
+
+
+/*----섹션 호버----*/
+section ul li:hover:after{opacity: 1; transition:.5s}
+
+
+/*----푸터----*/
+footer{width: 100%; height: 100%; background: #000;color: #fff;}
+footer div{display: flex;justify-content: space-between;}
+footer div span{width: 400px; height: 100%;text-align: center;padding: 80px 50px;}
+footer div span strong{display: block;padding: 5px;}
+footer div nav{width: 500px;display:flex; justify-content: space-between;padding: 100px;}
+footer div nav p{width: 20px;}

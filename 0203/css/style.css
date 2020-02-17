@@ -1,0 +1,200 @@
+@import url('common.css');
+header {
+    width: 100%;
+}
+
+header article {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 0 80px 0;
+}
+
+header article h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+header article nav {}
+
+header article nav a {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+header article nav a:after {
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #333;
+    display: block;
+    transition: .5s;
+    margin: 0 auto;
+}
+
+header article nav a:hover:after {
+    width: 100%;
+}
+
+section {}
+
+section .spot {
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+
+section .spot figure {
+    position: relative;
+    overflow: hidden;
+}
+
+/*--이미지 애니메이션 효과--*/
+
+section .spot figure img {
+    width: 100%;
+    transform: translateY(0%);
+    animation: spot 3s forwards;
+}
+
+@keyframes spot {
+    0% {
+        width: 0%;
+        transform: translateY(50%);
+    }
+}
+
+section .spot figure figcaption {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*--인라인요소 수직으로--*/
+}
+
+section .spot figure figcaption span {
+    color: #fff;
+    font-size: 5em;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 6);
+    overflow: hidden;
+    height: 100px;
+    padding-top: 100px;
+    /*--transition:padding .5s;--*/
+    animation: txt .5s .5s;
+}
+
+@keyframes txt {
+    0% {}
+    100% {
+        padding-top: 0px;
+    }
+}
+
+section .spot p {
+    position: absolute;
+    left: 0;
+    bottom;
+    0;
+    font-size: 1.1em;
+    transform: rotate(-90deg) translateY(-150%);
+    transform-origin: 0% 100%;
+}
+
+
+/*--
+section .spot figure:hover figcaption span{ 
+    padding-top:0px;
+}
+
+section .spot figure:hover figcaption span:nth-of-type(2){ 
+    transition-delay: .15s} --*/
+
+.slide {
+    width: 1140px;
+    margin: 90px auto;
+}
+
+.slide ul {}
+
+.slide ul li {}
+
+.slide ul li figure {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide ul li figure p {
+    order: 2;           /*--order:1, order:2 순서정해줌--*/
+    width: 50%;
+}
+
+.slide ul li figure > p img {
+    width: 100%;
+}
+
+.slide ul li figure figcaption {
+    order: 1;
+    width: 40%;
+}
+
+.slide ul li figure figcaption strong {
+    font-size: 2.6em;
+    color: #333;
+    white-space: pre-line;
+    text-transform: uppercase;
+}
+
+.slide ul li figure figcaption p {
+    font-size: .8em;
+    width: 100%;
+}
+
+.slide ul li figure figcaption a {
+    margin-top: 20px;
+    text-decoration: underline;
+}
+.slide{position: relative;}
+
+.slide ul {
+    position: relative;
+    height: 220px;
+}
+
+.slide ul li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.slide .num{
+    position: absolute; 
+    right: 0px; 
+    top: -30px;
+    
+}
+
+.slide .num code{font-size: 2em; color: #333; 
+    font-weight: bold;padding-bottom: 50px;
+    
+}
+
+.slide ul li{display: none;}
+.slide ul li:first-of-type{
+    display: block;
+}
+
+footer {
+    background: #eee; 
+    text-align: center; 
+    padding: 40px;}

@@ -1,0 +1,68 @@
+@import url('common.css');
+    
+    html,body{height: 100%;}
+
+.animation
+   {width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    perspective: 900px;
+}
+.animation h1{
+    color:#f00;
+    font-size: 2em;
+}
+.animation div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform-style: preserve-3d;
+    animation: spin 10s infinite linear
+}
+.animation div p{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
+
+.animation div p:nth-of-type(1){
+    background: #f0f;
+    opacity: 0.5;
+    transform:rotateY(0deg) translatez(150px)   
+}
+.animation div p:nth-of-type(2){
+    background: #00f;
+    opacity: 0.5;
+    transform:rotateY(90deg) translatez(150px)   
+    
+}
+.animation div p:nth-of-type(3){
+    background: #f0f;
+    opacity: 0.5;
+    transform:rotateY(-90deg) translatez(150px)   
+}
+.animation div p:nth-of-type(4){
+    background: #333;
+    opacity: 0.5;
+    transform:rotateY(180deg) translatez(150px)       
+}
+.animation div p:nth-of-type(5){
+    background: #f92;
+    opacity: 0.5;
+    transform:rotateX(90deg) translatez(150px)   
+    
+}
+.animation div p:nth-of-type(6){
+    background: #e5e;
+    opacity: 0.5;
+    transform:rotateX(-90deg) translatez(150px)   
+}
+
+@keyframes spin{
+    100%{
+        transform: rotateY(360deg) rotateX(90deg)

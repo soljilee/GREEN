@@ -1,0 +1,32 @@
+/* 공통영역 스타일*/
+
+html,
+body {
+    width: 100%;
+    height: 100%
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+span,
+em,
+strong,
+a {
+    display: inline-block
+}
+
+* {
+    margin: 0;
+    font-family: '';
+    color: #000;
+    box-sizing:border-box;
+}

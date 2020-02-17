@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<fieldset>
+<legend> Form 기본태그(inline-block) </legend>
+<form action="http://naver.com" method="post"> 
+  
+  <!--method="get"상단url정보가 나타남-->
+  
+    <input type="text" name="id" placeholder="아이디를 입력해주세요." required readonly> <br>
+  <select name="city">
+      <option>서울</option>
+      <option selected>경기</option>
+  </select> <br>   
+      <button>주소찾기</button><br>
+      <textarea name="con" cols="100" rows="2">ㅇㅇ</textarea>
+      
+      <input type="submit" value="send"> 
+
+</form>
+</fieldset>
+
+<fieldset>
+<legend> input type</legend>
+<input type="text" name=""><br>
+<input type="password" name=""><br>
+
+<label for="m">남</label>
+<input type="radio" name="g" id="m" checked>
+<label for="w">여</label>
+<input type="radio" name="g" id="w" ><br>
+
+<label>약관동의</label>
+<input type="checkbox" name=""><br>
+
+<input type="file" name=""><br>
+<input type="image" src="img/main1.jpg" name=""><br>
+
+</fieldset>
+</body>
+</html>

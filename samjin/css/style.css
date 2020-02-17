@@ -1,0 +1,30 @@
+@import url('common.css');
+
+
+.wrap{width: 1820px; margin: 0 auto;}
+.wrap .header{overflow: hidden;position: relative;}
+.wrap .header img{float: left; margin: 5px;}
+.wrap .header ul{float: right; margin-right: 70px;}
+.wrap .header ul li{display:inline-block;}
+.wrap .header ul li a{font-size: 18px; color: #000; margin: 10px ; padding: 20px ;}
+
+.wrap .header ul li:nth-of-type(6):after{content:"";border-left:1px solid #030;}
+
+.menu {position: absolute; right: 0;top: 35%;}
+.menu span{position: absolute; right: 5px; background: #000; width: 30px; height: 2px;}
+
+.menu span:nth-of-type(1){top: 0px}
+.menu span:nth-of-type(2){top: 10px}
+.menu span:nth-of-type(3){top: 20px}
+/*
+.header .menu{position: absolute; right: 40px; top: 10px; width: 40px; height: 40px;}
+.header .menu span{width: 100%; height: 2px; background: #fff;position: absolute;
+left: 0; top: 0;}
+*/
+
+.wrap .visual{}
+.wrap .visual img{position: relative;}
+.wrap .visual strong{font-size: 100px; color: #fff; position: absolute; 
+                     left: 650px; top: 300px;}
+.wrap .visual strong em{font-size: 20px; color: #fff; font-style: normal;padding: 0px 120px;}
+                       

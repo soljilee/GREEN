@@ -1,0 +1,18 @@
+@import url('common.css');
+html,
+body {
+    width: 100%;
+}
+
+.wrap
+.wrap .scale {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.scale h1 {}
+
+.scale figure {}
+
+.scale figure img {}

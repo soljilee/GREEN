@@ -1,0 +1,76 @@
+@import url('common.css');
+html,
+body {
+    height: 100%;
+}
+
+article {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+    padding-bottom: 50px;
+}
+
+.scale figure {
+    overflow: hidden;
+}
+
+.scale figure img {
+    transition: .5s;
+}
+
+.scale figure:hover img {
+    transform: scale(1.6) rotate(180deg);
+}
+
+.scale_01 figure img {
+    transition: .5s;
+    transform: scale(0.5);
+}
+
+.scale_01 figure:hover img {
+    transform: scale(1.5) rotate(360deg);
+}
+
+.scale_02 figure img {
+    opacity: 0.2;
+    transform: scale(0.5);
+    transition: .5s
+}
+
+.scale_02 figure:hover img {
+    opacity: 1;
+    transform: scale(2);
+    transition: .5s
+}
+
+.scale_03 h1:hover {
+    transition: .5s;
+    transform: scale(2) translate(50%);
+    transition: .5s;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    color: #a99;
+}
+
+.scale_03 figure:hover img {
+    transform: translate(50%);
+    transition: .5s;
+}
+
+.scale_04 figure{animation-name: sj;
+                 animation-duration: .3s;}
+
+@keyframes sj{
+    from{margin-left: 100%;
+        width: 30%;}
+    to{margin-left: 0%;
+    width: 100%;}
+}
+

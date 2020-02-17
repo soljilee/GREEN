@@ -1,0 +1,25 @@
+@import url('');
+*{margin: 0 auto; color: #95979d; font-size: 14px;}
+
+
+.public{width: 900px; background: #fff; 
+        margin: 100px auto;padding: 60px;}
+.public h2{font-size: 2em; color: #333; text-align:                  center;padding-bottom: 40px;}
+
+.public .p_all{border: 10px solid #333; padding: 60px;}
+.public .p_all h3{font-size: 1.6em;text-align: center;
+                 color: #333;padding-bottom: 20px;}
+.public .p_all h3 small{display: block; line-height: 3;}
+
+.public .p_all dl{border: 2px solid #aaa;padding: 10px;}
+.public .p_all dl dt{padding: 10px 0;}
+.public .p_all dl dd{border-top: 1px solid #ddd;padding: 10px 0;position: relative;padding-left:20px;background: url('../icon.jpg') 3px no-repeat;}
+.public .p_all dl dd input{position: absolute;
+                 right: 0; top: 14px;}
+.public .p_all dl dd em{font-style: normal;color: #f00;
+                       font-weight: bold;}
+
+.public .p_all div{text-align: center;}
+.public .p_all div > input{background: #aaa;
+ border: none; padding: 10px 30px; color: #fff;
+ margin-top: 20px;}

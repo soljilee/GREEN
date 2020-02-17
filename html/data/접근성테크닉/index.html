@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+  
+   <style>
+       *{margin: 0; padding: 0}
+       .box{width: 500px;
+            margin:100px auto;}
+       .box:after{content: ''; display: block;clear: both;}
+       .box div{width: 200px; height: 200px; background: #f00; position: relative}
+       .box div:nth-of-type(1){float: left;}
+       .box div:nth-of-type(2){float: right}
+       .box div p{position: absolute; left:-10px; top:-10px;
+                  width: 60px; height: 60px; background: #0f0;
+                  border-radius: 100%;text-align: center;
+                  line-height: 60px; z-index: 2}
+       .box div img{width: 100%;height: 100%}
+       .box div:after{position: absolute; background: black; 
+                 width: 100%; height: 0; 
+           content:'MORE';color:white; text-align: center;
+           line-height: 200px;display: block;clear: both;
+           left: 0; top: 0; background: rgba(0,0,0,0.6); opacity: 0;transition: .5s}
+       .box div:hover:after{height: 100%; opacity: 1;}
+       .box div:hover p{border-radius: 0;}                   
+   </style>
+<body>    
+    <div class="box">
+     <div>
+         <p>HOT</p>
+         <img src="titleArea/back.jpg" alt="">
+     </div>
+     <div>
+         <p>HOT</p>
+         <img src="titleArea/heading.jpg" alt=""> 
+     </div>
+    </div>
+</body>
+</html>

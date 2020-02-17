@@ -1,0 +1,31 @@
+@import url('');
+*{margin: 0 auto; color: #95979d; font-size: 14px;}
+
+
+.public{width: 900px; background: #fff; 
+        margin: 100px auto;padding: 60px;}
+.public h2{font-size: 2em; color: #333; text-align:                  center;padding-bottom: 40px;}
+
+.public .p_all{border: 10px solid #333; padding: 60px;}
+.public .p_all h3{font-size: 2em;text-align: center;
+                 color: #333;padding-bottom: 40px;}
+.public .p_all h3 small{display: block; line-height: 3; color: #333}
+
+
+
+.public .p_all dl dt{}
+.public .p_all dl dd{border-top: 1px solid #ddd;padding: 15px 15px;position: relative;}
+.public .p_all dl dd:nth-of-type(3){text-align: right;}
+.public .p_all dl dd input{border: none;}
+
+.public .p_all div{text-align: center;position: relative;padding: 10px;}
+.public .p_all div span{border-bottom: 1px solid #333;margin: 5px;position: relative;color: #333;}
+
+.public .p_all div .after:after{content: "";
+position: absolute;
+width: 1px; height: 15px; background: #333;right: -8px;
+top: 3px}
+
+.public .p_all div > input{background: #aaa;
+ border: none; padding: 10px 50px; color: #fff;
+ margin: 34px;}

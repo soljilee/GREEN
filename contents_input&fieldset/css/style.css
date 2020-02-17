@@ -1,0 +1,10 @@
+@import url('common.css');
+
+fieldset{ padding: 50px;}
+
+fieldset legend{margin:0 auto;}
+fieldset input{}
+fieldset select{}
+fieldset button{}
+fieldset textarea{width: 100%; height: 300%;}
+
