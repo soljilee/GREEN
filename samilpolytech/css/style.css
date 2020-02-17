@@ -1,0 +1,253 @@
+@import url('common.css');
+
+.wrap{
+    margin: 0 auto;
+    width: 1920px;
+    height: 100%;
+}
+
+.wrap .header{    
+    width: 100%;
+    position: absolute;
+    display: flex; 
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+    align-items: center;
+    padding: 10px;
+}
+
+.wrap .header .logo{
+}
+
+.wrap .header .logo img{}
+
+.wrap .header .logo strong{
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.wrap .header ul{
+     margin: 0 auto;
+     padding-left: 45%;
+}
+
+.wrap .header ul li{
+    display: inline-block;
+    color: #fff;
+    padding: 0px 20px;
+}
+.wrap .header ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.wrap .header ul li a:after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 3px;
+    background: #fff;
+    transition: .5s;
+    margin: 0 auto;
+}
+.wrap .header ul li:hover a:after{
+    width: 100%;
+}
+
+.wrap .header ul li a:hover{
+    color: #f00;
+}
+/*--버거메뉴--*/
+.wrap .header .menu{
+    left: -3%;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrap .header .menu span{
+    width:45px;
+    height:1px;
+    position: absolute;
+    background: #fff;
+    top: 15px;
+}
+.wrap .header .menu span:nth-of-type(2){
+    top: 25px;
+}
+.wrap .header .menu span:nth-of-type(3){
+    top: 35px;
+}
+
+
+.wrap .visual{
+    width: 1920px;
+    height: 500px;
+}
+.wrap .visual img{
+    width: 100%;
+    height: 100%;
+}
+/*--------헤더,비주얼-------*/
+
+section{
+    }
+section h2{
+    text-align: center;
+    margin: 100px;
+    white-space: pre-line;
+}
+
+section .content{
+    display: flex;
+    justify-content: center;
+}
+
+section .content span{
+    border: 1px solid #eee;
+    padding: 50px 50px 80px;
+    margin: 0px 30px;
+}
+
+section .content span img{
+    
+    
+}
+section .content p{
+    text-align: center;
+}
+section .content span .con1{
+    padding: 10%;
+    font-weight: bold;
+}
+
+
+section .content span:hover{
+    background: #eee;
+}
+
+
+
+
+
+/*-------본문-----*/
+
+.gallery{}
+.gallery h2{}
+.gallery .img{
+    width: 100%;
+    height: 600px;
+}
+.gallery .img figure{
+    width: 100%;
+}
+
+.gallery .img figure img{
+
+    
+}
+
+
+/*------설비현황--------*/
+
+
+.more1{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+.more1 figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.more1 figure figcaption{
+}
+
+.more1 figure figcaption span{
+    white-space: pre-line;
+}
+
+.more1 figure figcaption span h2{
+    font-weight: bold;
+}
+
+.more1 figure figcaption img{
+}
+
+
+article figure figcaption p{}
+
+/*---------시험설비-------*/
+
+.more2{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+.more2 figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more2 figure figcaption{
+}
+
+.more2 figure figcaption img{}
+
+.more2 figure figcaption span{
+    white-space: pre-line;
+}
+
+.more2 figure figcaption span h2{
+    font-weight: bold;
+}
+
+
+/*----------파트너-------*/
+footer .partner{
+    margin-top: 300px;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer .partner img{
+    vertical-align: middle;
+    width: 100px;
+    margin: 0px 50px;
+}
+/*---------푸터--------*/
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background: #333;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p{
+    color: #fff;
+}
+
+
+
+
+
+/*a5f16befa9cb388d62440f8c4ac0c14e 카카오지도*/
