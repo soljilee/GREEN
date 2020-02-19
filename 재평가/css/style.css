@@ -1,0 +1,52 @@
+@import url('common.css');
+
+.wrap{
+   height: 100%;
+   margin: 0 auto;
+}
+
+.wrap header{
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   padding: 90px 240px 80px;
+}
+
+.wrap header h1{
+
+}
+
+.wrap header nav{
+
+}
+
+.wrap header nav ul{
+    
+}
+
+.wrap header nav ul li{
+    display: inline-block;
+    padding: 0px 40px; 
+}
+
+.wrap header nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wrap header nav ul li a:after{
+     content:'';
+     margin: 0 auto;
+     width: 50px;
+     height: 3px;
+     background: #333;
+     display: block;
+     transition: .10s;     
+}
+
+.wrap header nav ul li:hover a:after{
+    width: 100%;
+    transition:.10s
+}
